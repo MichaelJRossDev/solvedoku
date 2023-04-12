@@ -6,8 +6,11 @@ import SudokuBoard from './components/SudokuBoard';
 function App() {
   return (
     <div className="App">
-      <h1>Solvedoku</h1>
+      <h1>Solvedoku.</h1>
       <SudokuBoard/>
+      <table className='ButtonTable'>
+        <tr><td><button className='SolveButton'>Solve</button></td><td><button className='ClearButton'>Clear</button></td></tr>
+      </table>
     </div>
   );
 }

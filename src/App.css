@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.BorderedRow td {
+  border-bottom: 3pt solid black;
+}
+
+.BorderedColumn {
+  border-right: 3pt solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.SudokuBoard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SudokuCell {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.ButtonTable {
+  margin-left: auto;
+  margin-right: auto;
+}
