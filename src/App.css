@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -38,11 +43,11 @@
 }
 
 .BorderedRow td {
-  border-bottom: 3pt solid black;
+  border-bottom: 3pt solid #cba6f7;
 }
 
 .BorderedColumn {
-  border-right: 3pt solid black;
+  border-right: 3pt solid #cba6f7;
 }
 
 table {
@@ -59,6 +64,7 @@ table {
   height: 50px;
   width: 50px;
   text-align: center;
+  background-color: #313244;
 }
 
 input::-webkit-outer-spin-button,
@@ -75,4 +81,12 @@ input[type=number] {
 .ButtonTable {
   margin-left: auto;
   margin-right: auto;
+}
+
+td {
+  padding: 2pt;
+}
+
+input {
+  color: #cdd6f4;
 }
