@@ -4,7 +4,7 @@ import SudokuCell from './SudokuCell';
 const initial = new Array(9).fill(new Array(9).fill(0));
 
 const SudokuBoard = (props: {sudokuArray: number[][], setSudokuArray: Function}) => {
-  const [sudokuArray, setSudokuArray] = useState(initial);
+  const [sudokuArray, setSudokuArray] = [props.sudokuArray, props.setSudokuArray];
   useEffect(() => {
     console.log(sudokuArray);
   }, [sudokuArray])

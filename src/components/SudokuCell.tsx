@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const SudokuCell = (props: {row: number, column: number, sudokuArray: number[][],setSudokuArray: Function}) => {
     const onChange = (e: React.FormEvent<HTMLInputElement>, row: number, col: number) => {
@@ -13,7 +13,7 @@ const SudokuCell = (props: {row: number, column: number, sudokuArray: number[][]
         
     }
     return (
-        <input type='number' className='SudokuCell' onChange={(e) => onChange(e, props.row, props.column)}/>
+        <input value={props.sudokuArray[props.row][props.column]} className='SudokuCell' onChange={(e) => onChange(e, props.row, props.column)}/>
     )
 }
 
