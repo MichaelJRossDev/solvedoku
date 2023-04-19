@@ -91,3 +91,13 @@ input {
   color: #cdd6f4;
   font-size: larger;
 }
+
+button {
+  background-color: #cba6f7;
+  color: #282c34;
+  font-size: larger;
+  border-radius: 12px;
+  border-style: hidden;
+  width: 130px;
+  height: 45px;
+}
