@@ -1,6 +1,6 @@
 {
   "name": "solvedoku",
-  "homepage": "http://michaeljrossdev.github.io/solvedoku",
+  "homepage": "https://michaeljrossdev.github.io/solvedoku",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
