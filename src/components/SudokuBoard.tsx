@@ -1,7 +1,4 @@
-import React, { useDebugValue, useEffect, useState } from 'react';
 import SudokuCell from './SudokuCell';
-
-const initial = new Array(9).fill(new Array(9).fill(0));
 
 const SudokuBoard = (props: {sudokuArray: number[][], setSudokuArray: Function, solveHandler: Function}) => {
   const [sudokuArray, setSudokuArray] = [props.sudokuArray, props.setSudokuArray];

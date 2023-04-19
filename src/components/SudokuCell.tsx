@@ -1,5 +1,4 @@
-import { log } from 'console';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const SudokuCell = (props: {row: number, column: number, sudokuArray: number[][],setSudokuArray: Function, solveHandler: Function}) => {
     const formattingClass = props.sudokuArray[props.row][props.column] === 0 ? 'zero' : 'nonzero';

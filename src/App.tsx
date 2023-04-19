@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SudokuBoard from './components/SudokuBoard';
 import { solveSudoku } from './solver';
-import { log } from 'console';
 
 const App = () => {
   const [theme, setTheme] = useState('catppuccin');
@@ -28,7 +26,6 @@ const App = () => {
 
   return (
     <div className={`App ${theme}`}>
-      
         <h1>Solvedoku.</h1>
         <SudokuBoard sudokuArray={sudokuArray} setSudokuArray={setSudokuArray} solveHandler={solveHandler}/>
         <table className='ButtonTable'>
