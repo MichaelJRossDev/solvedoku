@@ -10,26 +10,32 @@ const App = () => {
 
   const solveHandler = () => {
     const solved = solveSudoku(JSON.parse(JSON.stringify(sudokuArray)));
-    console.log(solved)
-    if (solved) setSudokuArray(solved);
+    if (solved) {
+      setSudokuArray(solved)
+    } else {
+      console.log('Not solveable');
+    }
+
   }
 
   return (
     <div className="App">
-      <body>
+      
         <h1>Solvedoku.</h1>
-        <SudokuBoard sudokuArray={sudokuArray} setSudokuArray={setSudokuArray}/>
+        <SudokuBoard sudokuArray={sudokuArray} setSudokuArray={setSudokuArray} solveHandler={solveHandler}/>
         <table className='ButtonTable'>
-          <tr>
-            <td>
-              <button className='SolveButton' onClick={solveHandler}>Solve</button>
-            </td>
-            <td>
-              <button className='ClearButton' onClick={() => setSudokuArray(new Array(9).fill(new Array(9).fill(0)))}>Clear</button>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>
+                <button className='SolveButton' onClick={solveHandler}>Solve</button>
+              </td>
+              <td>
+                <button className='ClearButton' onClick={() => setSudokuArray(new Array(9).fill(new Array(9).fill(0)))}>Clear</button>
+              </td>
+            </tr>
+          </tbody>
         </table>
-      </body>
+      
     </div>
   );
 }
