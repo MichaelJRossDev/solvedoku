@@ -7,29 +7,9 @@ body {
   color: #cdd6f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.BorderedRow td {
-  border-bottom: 3pt solid #cba6f7;
-}
-
-.BorderedColumn {
-  border-right: 3pt solid #cba6f7;
-}
-
 table {
   border-collapse: collapse;
 }
-
 .SudokuBoard {
   display: flex;
   align-items: center;
@@ -37,8 +17,8 @@ table {
 }
 
 .SudokuCell {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   text-align: center;
   background-color: #313244;
   border-radius: 50%;
@@ -55,22 +35,23 @@ input {
 }
 
 td {
-  padding: 4pt;
+  padding: 0.35rem;
 }
 
 button {
   background-color: #cba6f7;
   color: #282c34;
   font-size: larger;
-  border-radius: 12px;
+  border-radius: 3rem;
   border-style: hidden;
-  width: 130px;
-  height: 45px;
+  width: 7rem;
+  height: 3rem;
 }
 
 select {
   border-style: hidden;
-  border-radius: 5px;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 /* Gruvbox Colours */
@@ -81,11 +62,11 @@ select {
 }
 
 .gruvbox .BorderedRow td {
-  border-bottom: 3pt solid #fe8019;
+  border-bottom: 0.225rem solid #fe8019;
 }
 
 .gruvbox .BorderedColumn {
-  border-right: 3pt solid #fe8019;
+  border-right: 0.225rem solid #fe8019;
 }
 
 .gruvbox .SudokuCell {
@@ -114,11 +95,11 @@ select {
 }
 
 .catppuccin .BorderedRow td {
-  border-bottom: 3pt solid #f4b8e4;
+  border-bottom: 0.225rem solid #f4b8e4;
 }
 
 .catppuccin .BorderedColumn {
-  border-right: 3pt solid #f4b8e4;
+  border-right: 0.225rem solid #f4b8e4;
 }
 
 .catppuccin .SudokuCell {
@@ -147,11 +128,11 @@ select {
 }
 
 .nord .BorderedRow td {
-  border-bottom: 3pt solid #81a1c1 ;
+  border-bottom: 0.225rem solid #81a1c1 ;
 }
 
 .nord .BorderedColumn {
-  border-right: 3pt solid #81a1c1 ;
+  border-right: 0.225rem solid #81a1c1 ;
 }
 
 .nord .SudokuCell {
@@ -180,11 +161,11 @@ select {
 }
 
 .one .BorderedRow td {
-  border-bottom: 3pt solid #98c379 ;
+  border-bottom: 0.225rem solid #98c379 ;
 }
 
 .one .BorderedColumn {
-  border-right: 3pt solid #98c379 ;
+  border-right: 0.225rem solid #98c379 ;
 }
 
 .one .SudokuCell {
@@ -203,4 +184,169 @@ select {
 .one select {
   background-color: #56b6c2;
   color: #282c34;
+}
+
+/* Dracula Colours */
+
+.dracula {
+  background-color: #282a36;
+  color: #f8f8f2  ;
+}
+
+.dracula .BorderedRow td {
+  border-bottom: 0.225rem solid #bd93f9 ;
+}
+
+.dracula .BorderedColumn {
+  border-right: 0.225rem solid #bd93f9
+}
+
+.dracula .SudokuCell {
+  background-color: #44475a;
+}
+
+.dracula button {
+  background-color: #ff79c6;
+  color: #282a36;
+}
+
+.dracula input {
+  color: #f8f8f2;
+}
+
+.dracula select {
+  background-color: #50fa7b;
+  color: #282a36;
+}
+
+/* Solarized Dark Colours */
+
+.solarized-dark {
+  background-color: #002b36;
+  color: #eee8d5  ;
+}
+
+.solarized-dark .BorderedRow td {
+  border-bottom: 0.225rem solid #2aa198 ;
+}
+
+.solarized-dark .BorderedColumn {
+  border-right: 0.225rem solid #2aa198
+}
+
+.solarized-dark .SudokuCell {
+  background-color: #073642;
+}
+
+.solarized-dark button {
+  background-color: #859900;
+  color: #002b36;
+}
+
+.solarized-dark input {
+  color: #eee8d5;
+}
+
+.solarized-dark select {
+  background-color: #b58900;
+  color: #002b36;
+}
+
+/* Solarized Light Colours */
+
+.solarized-light {
+  background-color: #fdf6e3;
+  color: #002b36  ;
+}
+
+.solarized-light .BorderedRow td {
+  border-bottom: 0.225rem solid #cb4b16 ;
+}
+
+.solarized-light .BorderedColumn {
+  border-right: 0.225rem solid #cb4b16
+}
+
+.solarized-light .SudokuCell {
+  background-color: #eee8d5;
+}
+
+.solarized-light button {
+  background-color: #859900;
+  color: #002b36;
+}
+
+.solarized-light input {
+  color: #657b83;
+}
+
+.solarized-light select {
+  background-color: #b58900;
+  color: #002b36;
+}
+
+/* Monokai Colours */
+
+.monokai {
+  background-color: #272822;
+  color: #D6D6D6  ;
+}
+
+.monokai .BorderedRow td {
+  border-bottom: 0.225rem solid #F92572 ;
+}
+
+.monokai .BorderedColumn {
+  border-right: 0.225rem solid #F92572
+}
+
+.monokai .SudokuCell {
+  background-color: #34352F;
+}
+
+.monokai button {
+  background-color: #66D8EF;
+  color: #272822;
+}
+
+.monokai input {
+  color: #d6d6d6;
+}
+
+.monokai select {
+  background-color: #A6E12E;
+  color: #002b36;
+}
+
+/* Princess Theme */
+
+.barbie {
+  background-color: #F5E9F5;
+  color: #DD71B9  ;
+}
+
+.barbie .BorderedRow td {
+  border-bottom: 0.225rem solid #EBB2D9 ;
+}
+
+.barbie .BorderedColumn {
+  border-right: 0.225rem solid #EBB2D9
+}
+
+.barbie .SudokuCell {
+  background-color: #F2DCEE;
+}
+
+.barbie button {
+  background-color: #DD71B9;
+  color: #F5E9F5;
+}
+
+.barbie input {
+  color: #DD71B9;
+}
+
+.barbie select {
+  background-color: #DD71B9;
+  color: #F5E9F5;
 }

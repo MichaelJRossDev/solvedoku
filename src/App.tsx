@@ -4,7 +4,7 @@ import SudokuBoard from './components/SudokuBoard';
 import { solveSudoku } from './solver';
 
 const App = () => {
-  const [theme, setTheme] = useState('catppuccin');
+  const [theme, setTheme] = useState('nord');
   const [sudokuArray, setSudokuArray] = useState(new Array(9).fill(new Array(9).fill(0)));
 
   useEffect(() => {
@@ -40,11 +40,16 @@ const App = () => {
             </tr>
           </tbody>
         </table>
-        <select defaultValue={"catppuccin"} onChange={(e) => themeChangeHandler(e)}>
+        <select defaultValue={"nord"} onChange={(e) => themeChangeHandler(e)}>
           <option value={"catppuccin"}>Catppuccin</option>
           <option value={"gruvbox"}>Gruvbox</option>
           <option value={"nord"}>Nord</option>
           <option value={"one"}>Atom One</option>
+          <option value={"dracula"}>Dracula</option>
+          <option value={"solarized-dark"}>Solarized Dark</option>
+          <option value={"solarized-light"}>Solarized Light</option>
+          <option value={"monokai"}>Monokai</option>
+          <option value={"barbie"}>Barbie</option>
         </select>
       
     </div>
