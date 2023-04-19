@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SudokuBoard from './components/SudokuBoard';
@@ -6,7 +6,12 @@ import { solveSudoku } from './solver';
 import { log } from 'console';
 
 const App = () => {
+  const [theme, setTheme] = useState('catppuccin');
   const [sudokuArray, setSudokuArray] = useState(new Array(9).fill(new Array(9).fill(0)));
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme])
 
   const solveHandler = () => {
     const solved = solveSudoku(JSON.parse(JSON.stringify(sudokuArray)));
@@ -15,11 +20,14 @@ const App = () => {
     } else {
       console.log('Not solveable');
     }
+  }
 
+  const themeChangeHandler = (e: React.FormEvent<HTMLSelectElement>) => {
+    setTheme((e.target as HTMLButtonElement).value)  
   }
 
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
       
         <h1>Solvedoku.</h1>
         <SudokuBoard sudokuArray={sudokuArray} setSudokuArray={setSudokuArray} solveHandler={solveHandler}/>
@@ -35,6 +43,12 @@ const App = () => {
             </tr>
           </tbody>
         </table>
+        <select defaultValue={"catppuccin"} onChange={(e) => themeChangeHandler(e)}>
+          <option value={"catppuccin"}>Catppuccin</option>
+          <option value={"gruvbox"}>Gruvbox</option>
+          <option value={"nord"}>Nord</option>
+          <option value={"one"}>Atom One</option>
+        </select>
       
     </div>
   );

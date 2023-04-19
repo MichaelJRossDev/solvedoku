@@ -18,30 +18,6 @@ body {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .BorderedRow td {
   border-bottom: 3pt solid #cba6f7;
 }
@@ -65,17 +41,8 @@ table {
   width: 50px;
   text-align: center;
   background-color: #313244;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
-
-input[type=number] {
-    -moz-appearance:textfield; /* Firefox */
+  border-radius: 50%;
+  border-style: hidden;
 }
 
 .ButtonTable {
@@ -83,13 +50,12 @@ input[type=number] {
   margin-right: auto;
 }
 
-td {
-  padding: 2pt;
+input {
+  font-size: larger;
 }
 
-input {
-  color: #cdd6f4;
-  font-size: larger;
+td {
+  padding: 4pt;
 }
 
 button {
@@ -100,4 +66,141 @@ button {
   border-style: hidden;
   width: 130px;
   height: 45px;
+}
+
+select {
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+/* Gruvbox Colours */
+
+.gruvbox {
+  background-color: #282828;
+  color: #ebdbb2;
+}
+
+.gruvbox .BorderedRow td {
+  border-bottom: 3pt solid #fe8019;
+}
+
+.gruvbox .BorderedColumn {
+  border-right: 3pt solid #fe8019;
+}
+
+.gruvbox .SudokuCell {
+  background-color: #3c3836;
+}
+
+.gruvbox button {
+  background-color: #ebdbb2;
+  color: #282828;
+}
+
+.gruvbox input {
+  color: #ebdbb2;
+}
+
+.gruvbox select {
+  background-color: #a89984;
+  color: #282828;
+}
+
+/* Catppuccin Colours */
+
+.catppuccin {
+  background-color: #303446;
+  color: #c6d0f5;
+}
+
+.catppuccin .BorderedRow td {
+  border-bottom: 3pt solid #f4b8e4;
+}
+
+.catppuccin .BorderedColumn {
+  border-right: 3pt solid #f4b8e4;
+}
+
+.catppuccin .SudokuCell {
+  background-color: #414559;
+}
+
+.catppuccin button {
+  background-color: #a6d189;
+  color: #303446;
+}
+
+.catppuccin input {
+  color: #c6d0f5;
+}
+
+.catppuccin select {
+  background-color: #babbf1;
+  color: #303446;
+}
+
+/* Nord Colours */
+
+.nord {
+  background-color: #434c5e;
+  color: #8fbcbb  ;
+}
+
+.nord .BorderedRow td {
+  border-bottom: 3pt solid #81a1c1 ;
+}
+
+.nord .BorderedColumn {
+  border-right: 3pt solid #81a1c1 ;
+}
+
+.nord .SudokuCell {
+  background-color: #4c566a;
+}
+
+.nord button {
+  background-color: #a3be8c;
+  color: #434c5e;
+}
+
+.nord input {
+  color: #8fbcbb;
+}
+
+.nord select {
+  background-color: #5e81ac;
+  color: #2e3440;
+}
+
+/* Atom One Colours */
+
+.one {
+  background-color: #282c34;
+  color: #E06C75  ;
+}
+
+.one .BorderedRow td {
+  border-bottom: 3pt solid #98c379 ;
+}
+
+.one .BorderedColumn {
+  border-right: 3pt solid #98c379 ;
+}
+
+.one .SudokuCell {
+  background-color: #2f343d;
+}
+
+.one button {
+  background-color: #e5c07b;
+  color: #282c34;
+}
+
+.one input {
+  color: #abb2bf;
+}
+
+.one select {
+  background-color: #56b6c2;
+  color: #282c34;
 }
