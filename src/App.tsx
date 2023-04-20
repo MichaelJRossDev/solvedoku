@@ -50,6 +50,10 @@ const App = () => {
           <option value={"solarized-light"}>Solarized Light</option>
           <option value={"monokai"}>Monokai</option>
           <option value={"barbie"}>Barbie</option>
+          <option value={"zenburn"}>Zenburn</option>
+          <option value={"matrix"}>Matrix</option>
+          <option value={"autumn"}>Autumn</option>
+          <option value={"spicy"}>🌶️</option>
         </select>
       
     </div>

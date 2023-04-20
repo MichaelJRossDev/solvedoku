@@ -62,11 +62,11 @@ select {
 }
 
 .gruvbox .BorderedRow td {
-  border-bottom: 0.225rem solid #fe8019;
+  border-bottom: 0.225rem solid #FE8018;
 }
 
 .gruvbox .BorderedColumn {
-  border-right: 0.225rem solid #fe8019;
+  border-right: 0.225rem solid #FE8018;
 }
 
 .gruvbox .SudokuCell {
@@ -83,7 +83,7 @@ select {
 }
 
 .gruvbox select {
-  background-color: #a89984;
+  background-color: #689D6A;
   color: #282828;
 }
 
@@ -318,7 +318,7 @@ select {
   color: #002b36;
 }
 
-/* Princess Theme */
+/* Barbie Theme */
 
 .barbie {
   background-color: #F5E9F5;
@@ -349,4 +349,136 @@ select {
 .barbie select {
   background-color: #DD71B9;
   color: #F5E9F5;
+}
+
+/* Zenburn Colours */
+
+.zenburn {
+  background-color: #3F3F3F;
+  color: #C2BF9F  ;
+}
+
+.zenburn .BorderedRow td {
+  border-bottom: 0.225rem solid #7E9F7F ;
+}
+
+.zenburn .BorderedColumn {
+  border-right: 0.225rem solid #7E9F7F
+}
+
+.zenburn .SudokuCell {
+  background-color: #545454;
+}
+
+.zenburn button {
+  background-color: #DFDEBF;
+  color: #3F3F3F;
+}
+
+.zenburn input {
+  color: #DEDEDE;
+}
+
+.zenburn select {
+  background-color: #8BD0D3;
+  color: #545454;
+}
+
+/* Matrix Colours */
+
+.matrix {
+  background-color: #0C0C0C;
+  color: #BBFFBB  ;
+}
+
+.matrix .BorderedRow td {
+  border-bottom: 0.225rem solid #00CC01 ;
+}
+
+.matrix .BorderedColumn {
+  border-right: 0.225rem solid #00CC01
+}
+
+.matrix .SudokuCell {
+  background-color: #002200;
+}
+
+.matrix button {
+  background-color: #006501;
+  color: #84F783;
+}
+
+.matrix input {
+  color: #00C600;
+}
+
+.matrix select {
+  background-color: #006501;
+  color: #00CC01;
+}
+
+/* Autumn Colours */
+
+.autumn {
+  background-color: #241F19;
+  color: #FFE5B4  ;
+}
+
+.autumn .BorderedRow td {
+  border-bottom: 0.225rem solid #C13F01 ;
+}
+
+.autumn .BorderedColumn {
+  border-right: 0.225rem solid #C13F01
+}
+
+.autumn .SudokuCell {
+  background-color: #2D2822;
+}
+
+.autumn button {
+  background-color: #8b571b;
+  color: #241F19;
+}
+
+.autumn input {
+  color: #FFE5B4;
+}
+
+.autumn select {
+  background-color: #E4963D;
+  color: #241F19;
+}
+
+/* spicy Colours */
+
+.spicy {
+  background-color: #BC412B;
+  color: #B8D5B8  ;
+}
+
+.spicy .BorderedRow td {
+  border-bottom: 0.225rem solid #49cbce ;
+}
+
+.spicy .BorderedColumn {
+  border-right: 0.225rem solid #49cbce
+}
+
+.spicy .SudokuCell {
+  background-color: #c74932;
+}
+
+.spicy button {
+  background-color: #B8D5B8;
+  color: #241F19;
+}
+
+.spicy input {
+  color: #FED18C;
+}
+
+.spicy select {
+  background-color: #FE654F;
+  color: #241F19;
 }
