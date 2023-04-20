@@ -5,18 +5,23 @@ import { solveSudoku } from './solver';
 
 const App = () => {
   const [theme, setTheme] = useState('nord');
+  const [errorClass, setErrorClass] = useState('hidden');
   const [sudokuArray, setSudokuArray] = useState(new Array(9).fill(new Array(9).fill(0)));
 
   useEffect(() => {
     document.body.className = theme;
   }, [theme])
 
+  useEffect(() => {
+    setErrorClass('hidden');
+  }, [sudokuArray])
+
   const solveHandler = () => {
     const solved = solveSudoku(JSON.parse(JSON.stringify(sudokuArray)));
     if (solved) {
       setSudokuArray(solved)
     } else {
-      console.log('Not solveable');
+      setErrorClass('');
     }
   }
 
@@ -55,7 +60,8 @@ const App = () => {
           <option value={"autumn"}>Autumn</option>
           <option value={"spicy"}>🌶️</option>
         </select>
-      
+        <br/>
+        <label className={errorClass}>Unsolveable</label>
     </div>
   );
 }
