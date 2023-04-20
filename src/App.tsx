@@ -62,7 +62,7 @@ const App = () => {
           <option value={"spicy"}>🌶️</option>
         </motion.select>
         <br/>
-        <label className={errorClass}>Unsolveable</label>
+        <label className={errorClass}>Unsolvable</label>
     </div>
   );
 }
