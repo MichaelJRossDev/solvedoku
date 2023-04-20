@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const SudokuCell = (props: {row: number, column: number, sudokuArray: number[][],setSudokuArray: Function, solveHandler: Function}) => {
     const formattingClass = props.sudokuArray[props.row][props.column] === 0 ? 'zero' : 'nonzero';
@@ -22,7 +23,7 @@ const SudokuCell = (props: {row: number, column: number, sudokuArray: number[][]
         }        
     }
     return (
-        <input onKeyDown={(e) => onKeyDown(e)} value={props.sudokuArray[props.row][props.column] !== 0 ? props.sudokuArray[props.row][props.column] : ''} onFocus={onFocus} className={'SudokuCell' + ' ' + formattingClass} onChange={(e) => onChange(e, props.row, props.column)}/>
+        <motion.input whileHover={{scale: 1.15}} onKeyDown={(e) => onKeyDown(e)} value={props.sudokuArray[props.row][props.column] !== 0 ? props.sudokuArray[props.row][props.column] : ''} onFocus={onFocus} className={'SudokuCell' + ' ' + formattingClass} onChange={(e) => onChange(e, props.row, props.column)}/>
     )
 }
 

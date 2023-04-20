@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import SudokuBoard from './components/SudokuBoard';
 import { solveSudoku } from './solver';
+import { motion } from 'framer-motion';
 
 const App = () => {
   const [theme, setTheme] = useState('nord');
@@ -37,15 +38,15 @@ const App = () => {
           <tbody>
             <tr>
               <td>
-                <button className='SolveButton' onClick={solveHandler}>Solve</button>
+                <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='SolveButton' onClick={solveHandler}>Solve</motion.button>
               </td>
               <td>
-                <button className='ClearButton' onClick={() => setSudokuArray(new Array(9).fill(new Array(9).fill(0)))}>Clear</button>
+                <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} className='ClearButton' onClick={() => setSudokuArray(new Array(9).fill(new Array(9).fill(0)))}>Clear</motion.button>
               </td>
             </tr>
           </tbody>
         </table>
-        <select defaultValue={"nord"} onChange={(e) => themeChangeHandler(e)}>
+        <motion.select whileHover={{scale: 1.1}}  defaultValue={"nord"} onChange={(e) => themeChangeHandler(e)}>
           <option value={"catppuccin"}>Catppuccin</option>
           <option value={"gruvbox"}>Gruvbox</option>
           <option value={"nord"}>Nord</option>
@@ -59,7 +60,7 @@ const App = () => {
           <option value={"matrix"}>Matrix</option>
           <option value={"autumn"}>Autumn</option>
           <option value={"spicy"}>🌶️</option>
-        </select>
+        </motion.select>
         <br/>
         <label className={errorClass}>Unsolveable</label>
     </div>
