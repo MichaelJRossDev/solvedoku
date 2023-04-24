@@ -1,7 +1,7 @@
 # Solvedoku
 
 ## About
-Solvedoku is a themeable, sudoku-solving web app built in Typescript with Motion for animations.
+Solvedoku is a themeable, sudoku-solving web app built in Typescript-React with Motion for animations.
 
 It's currently hosted [here](https://michaeljrossdev.github.io/solvedoku) and works on mobile devices as well as desktop.
 
