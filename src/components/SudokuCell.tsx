@@ -23,7 +23,7 @@ const SudokuCell = (props: {row: number, column: number, sudokuArray: number[][]
         }        
     }
     return (
-        <motion.input whileHover={{scale: 1.15}} onKeyDown={(e) => onKeyDown(e)} value={props.sudokuArray[props.row][props.column] !== 0 ? props.sudokuArray[props.row][props.column] : ''} onFocus={onFocus} className={'SudokuCell' + ' ' + formattingClass} onChange={(e) => onChange(e, props.row, props.column)}/>
+        <motion.input pattern="\d*" whileHover={{scale: 1.15}} onKeyDown={(e) => onKeyDown(e)} value={props.sudokuArray[props.row][props.column] !== 0 ? props.sudokuArray[props.row][props.column] : ''} onFocus={onFocus} className={'SudokuCell' + ' ' + formattingClass} onChange={(e) => onChange(e, props.row, props.column)}/>
     )
 }
 
