@@ -25,10 +25,10 @@ table {
 }
 
 .SudokuCell {
-  height: 3rem;
-  width: 3rem;
+  --side: min(6vw, 6vh);
+  height: var(--side);
+  width: var(--side);
   text-align: center;
-  background-color: #313244;
   border-radius: 50%;
   border-style: hidden;
 }
@@ -70,11 +70,11 @@ select {
 }
 
 .gruvbox .BorderedRow td {
-  border-bottom: 0.225rem solid #FE8018;
+  border-bottom: 0.5vw solid #FE8018;
 }
 
 .gruvbox .BorderedColumn {
-  border-right: 0.225rem solid #FE8018;
+  border-right: 0.5vw solid #FE8018;
 }
 
 .gruvbox .SudokuCell {
@@ -103,11 +103,11 @@ select {
 }
 
 .catppuccin .BorderedRow td {
-  border-bottom: 0.225rem solid #f4b8e4;
+  border-bottom: 0.5vw solid #f4b8e4;
 }
 
 .catppuccin .BorderedColumn {
-  border-right: 0.225rem solid #f4b8e4;
+  border-right: 0.5vw solid #f4b8e4;
 }
 
 .catppuccin .SudokuCell {
@@ -136,11 +136,11 @@ select {
 }
 
 .nord .BorderedRow td {
-  border-bottom: 0.225rem solid #81a1c1 ;
+  border-bottom: 0.5vw solid #81a1c1 ;
 }
 
 .nord .BorderedColumn {
-  border-right: 0.225rem solid #81a1c1 ;
+  border-right: 0.5vw solid #81a1c1 ;
 }
 
 .nord .SudokuCell {
@@ -169,11 +169,11 @@ select {
 }
 
 .one .BorderedRow td {
-  border-bottom: 0.225rem solid #98c379 ;
+  border-bottom: 0.5vw solid #98c379 ;
 }
 
 .one .BorderedColumn {
-  border-right: 0.225rem solid #98c379 ;
+  border-right: 0.5vw solid #98c379 ;
 }
 
 .one .SudokuCell {
@@ -202,11 +202,11 @@ select {
 }
 
 .dracula .BorderedRow td {
-  border-bottom: 0.225rem solid #bd93f9 ;
+  border-bottom: 0.5vw solid #bd93f9 ;
 }
 
 .dracula .BorderedColumn {
-  border-right: 0.225rem solid #bd93f9
+  border-right: 0.5vw solid #bd93f9
 }
 
 .dracula .SudokuCell {
@@ -235,11 +235,11 @@ select {
 }
 
 .solarized-dark .BorderedRow td {
-  border-bottom: 0.225rem solid #2aa198 ;
+  border-bottom: 0.5vw solid #2aa198 ;
 }
 
 .solarized-dark .BorderedColumn {
-  border-right: 0.225rem solid #2aa198
+  border-right: 0.5vw solid #2aa198
 }
 
 .solarized-dark .SudokuCell {
@@ -268,11 +268,11 @@ select {
 }
 
 .solarized-light .BorderedRow td {
-  border-bottom: 0.225rem solid #cb4b16 ;
+  border-bottom: 0.5vw solid #cb4b16 ;
 }
 
 .solarized-light .BorderedColumn {
-  border-right: 0.225rem solid #cb4b16
+  border-right: 0.5vw solid #cb4b16
 }
 
 .solarized-light .SudokuCell {
@@ -301,11 +301,11 @@ select {
 }
 
 .monokai .BorderedRow td {
-  border-bottom: 0.225rem solid #F92572 ;
+  border-bottom: 0.5vw solid #F92572 ;
 }
 
 .monokai .BorderedColumn {
-  border-right: 0.225rem solid #F92572
+  border-right: 0.5vw solid #F92572
 }
 
 .monokai .SudokuCell {
@@ -334,11 +334,11 @@ select {
 }
 
 .barbie .BorderedRow td {
-  border-bottom: 0.225rem solid #EBB2D9 ;
+  border-bottom: 0.5vw solid #EBB2D9 ;
 }
 
 .barbie .BorderedColumn {
-  border-right: 0.225rem solid #EBB2D9
+  border-right: 0.5vw solid #EBB2D9
 }
 
 .barbie .SudokuCell {
@@ -367,11 +367,11 @@ select {
 }
 
 .zenburn .BorderedRow td {
-  border-bottom: 0.225rem solid #7E9F7F ;
+  border-bottom: 0.5vw solid #7E9F7F ;
 }
 
 .zenburn .BorderedColumn {
-  border-right: 0.225rem solid #7E9F7F
+  border-right: 0.5vw solid #7E9F7F
 }
 
 .zenburn .SudokuCell {
@@ -400,11 +400,11 @@ select {
 }
 
 .matrix .BorderedRow td {
-  border-bottom: 0.225rem solid #00CC01 ;
+  border-bottom: 0.5vw solid #00CC01 ;
 }
 
 .matrix .BorderedColumn {
-  border-right: 0.225rem solid #00CC01
+  border-right: 0.5vw solid #00CC01
 }
 
 .matrix .SudokuCell {
@@ -433,11 +433,11 @@ select {
 }
 
 .autumn .BorderedRow td {
-  border-bottom: 0.225rem solid #C13F01 ;
+  border-bottom: 0.5vw solid #C13F01 ;
 }
 
 .autumn .BorderedColumn {
-  border-right: 0.225rem solid #C13F01
+  border-right: 0.5vw solid #C13F01
 }
 
 .autumn .SudokuCell {
@@ -466,11 +466,11 @@ select {
 }
 
 .spicy .BorderedRow td {
-  border-bottom: 0.225rem solid #49cbce ;
+  border-bottom: 0.5vw solid #49cbce ;
 }
 
 .spicy .BorderedColumn {
-  border-right: 0.225rem solid #49cbce
+  border-right: 0.5vw solid #49cbce
 }
 
 .spicy .SudokuCell {
